@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,10 +21,45 @@
           }
         }
       </script>
+      <style>
+        .lato-font{
+          font-family: 'Lato', sans-serif;
+        }
+      </style>
 </head>
-<body>
-    <header></header>
-    <main></main>
+<body class="lato-font">
+    <header class="max-w-screen-xl mx-auto my-12">
+        <nav class="navbar px-2 py-4 lg:py-8 lg:px-12 lg:text-white lg:rounded-[600px] lg:bg-[#F85559]">
+          <div class="navbar-center hidden lg:flex mr-24">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+                  <div class="flex-1 lg:flex">
+                    <img src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-3xl">Fruit Burst</a>
+                  </div>
+                  <div class="dropdown dropdown-bottom dropdown-end">
+                    <button class="btn btn-square btn-ghost lg:hidden block">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28 text-black">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                <div class="navbar-end pl-64 hidden lg:block">
+                  <i class="fa-solid fa-magnifying-glass absolute"></i>
+                  <input type="text" placeholder="Search Here" class="input text-sm rounded-[600px] w-full max-w-xs" />
+                </div>
+            </nav>
+    </header>
+    <main class="max-w-screen-xl mx-auto"></main>
     <footer></footer>
 </body>
 </html>
